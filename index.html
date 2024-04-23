@@ -8,9 +8,15 @@
 </head>
 <body>
 <div id="tuner">
-    <div id="pitch">Pitch: -- Hz</div>
+    <div id="noteDisplay">C</div>
+    <div id="tunerScale">
+        <svg width="200" height="50" id="needleSVG">
+            <line x1="100" y1="50" x2="100" y2="10" stroke="green" stroke-width="3" id="needle" />
+            <!-- Additional SVG elements for the scale can be added here -->
+        </svg>
+    </div>
     <button id="start">Start Tuner</button>
 </div>
-<script src="tuner.js"></script>
+<script type="module" src="tuner.js"></script>
 </body>
 </html>
