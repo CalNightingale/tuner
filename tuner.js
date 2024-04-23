@@ -74,7 +74,7 @@ window.onload = function() {
     // Find the closest standard note to the detected pitch
     standardNotes.forEach(standardNote => {
       const difference = standardNote.frequency - pitch;
-      if (Math.abs(difference) < closest.difference) {
+      if (Math.abs(difference) < Math.abs(closest.difference)) {
         closest = {
           note: standardNote.note,
           difference: difference
